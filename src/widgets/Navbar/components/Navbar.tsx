@@ -2,7 +2,7 @@ import { classNames } from '@/shared/lib/classNames/classNames';
 import { FC } from 'react';
 import { Link } from 'react-router-dom';
 import styles from './Navbar.module.scss';
-import { AppLink, AppLinkTheme } from '@/shared/ui/AppLink/AppLink';
+import { AppLink, AppLinkTheme } from '@/shared/components/AppLink/AppLink';
 
 interface INavbarProps {
   className?: string;
