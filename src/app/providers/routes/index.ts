@@ -1,1 +1,3 @@
-export * from './components/AppRouter';
+import AppRouter from './components/AppRouter';
+
+export { AppRouter };

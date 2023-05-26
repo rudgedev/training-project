@@ -3,6 +3,7 @@ import { FC } from 'react';
 import { Link } from 'react-router-dom';
 import styles from './Navbar.module.scss';
 import { AppLink, AppLinkTheme } from '@/shared/components/AppLink/AppLink';
+import { ThemeSwitcher } from '@/widgets/ThemeSwitcher';
 
 interface INavbarProps {
   className?: string;
@@ -11,6 +12,7 @@ interface INavbarProps {
 export const Navbar: FC<INavbarProps> = ({ className }) => {
   return (
     <div className={classNames(styles.Navbar, {}, [className])}>
+      <ThemeSwitcher />
       <div className={styles.links}>
         <AppLink to="/" className={styles.mainLink} theme={AppLinkTheme.SECONDARY}>
           Главная
